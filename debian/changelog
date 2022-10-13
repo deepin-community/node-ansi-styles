@@ -1,0 +1,71 @@
+node-ansi-styles (4.2.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 4.2.1
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 12 Jan 2020 08:12:54 +0100
+
+node-ansi-styles (4.2.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 22 Dec 2019 08:45:34 +0100
+
+node-ansi-styles (4.2.0-1) experimental; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Use pkg-js-tools auto test & install
+  * New upstream version 4.2.0
+  * Patch upstream test to use tape instead of ava
+  * Add node-tape in dependencies and enable upstream test
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 21 Dec 2019 20:48:07 +0100
+
+node-ansi-styles (3.2.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 3.2.1
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Update URL in the Vcs-* field
+  * Update d/copyright
+  * Add minimal test
+  * Add upstream test in autopkgtest
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Mon, 21 Jan 2019 23:38:54 +0530
+
+node-ansi-styles (3.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Disable tests (switched to ava)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 08 Sep 2017 14:59:08 +0530
+
+node-ansi-styles (2.2.1-1) unstable; urgency=medium
+
+  [ Bas Couwenberg ]
+  * Remove myself from Uploaders.
+
+  [ Mathias Behrle ]
+  * Imported Upstream version 2.2.1
+  * Removing unused Build-Depends.
+  * Adding myself to Uploaders.
+  * Adding myself to debian copyright.
+  * Removing XS-Testsuite, no more needed.
+  * Updating to Standards-Version 3.8, no changes needed.
+  * Using secure URIs in the VCS fields.
+  * Running wrap-and-sort -sta.
+  * (Re-)Uploading to unstable (Closes: #753254).
+
+ -- Mathias Behrle <mbehrle@debian.org>  Mon, 18 Jul 2016 14:39:09 +0200
+
+node-ansi-styles (2.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #753254)
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 27 Mar 2015 16:22:57 +0100
