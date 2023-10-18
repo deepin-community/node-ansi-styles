@@ -1,27 +1,27 @@
 Source: node-ansi-styles
 Section: javascript
-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
-Uploaders:
- Mathias Behrle <mbehrle@debian.org>
 Priority: optional
-Testsuite: autopkgtest-pkg-nodejs
-Build-Depends:
- debhelper-compat (= 12),
- node-color-convert <!nocheck>,
- node-tape <!nocheck>,
- pkg-js-tools (>= 0.9.20~)
-Standards-Version: 4.4.1
-Vcs-Git: https://salsa.debian.org/js-team/node-ansi-styles.git
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Mathias Behrle <mbehrle@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs (>= 0.12.3~)
+ , node-color-convert <!nocheck>
+ , node-rollup-plugin-node-resolve
+ , node-tape <!nocheck>
+ , rollup
+ , terser
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-ansi-styles
+Vcs-Git: https://salsa.debian.org/js-team/node-ansi-styles.git
 Homepage: https://github.com/sindresorhus/ansi-styles
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-ansi-styles
 Architecture: all
-Depends:
- nodejs,
- node-color-convert,
- ${misc:Depends}
+Depends: ${misc:Depends}
+ , node-color-convert
+Provides: ${nodejs:Provides}
 Description: ANSI escape codes for styling strings in the terminal with Node.js
  ansi-styles is a Node.js module which provides ANSI escape codes for styling
  strings in the terminal.

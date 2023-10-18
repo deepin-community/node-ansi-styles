@@ -1,3 +1,74 @@
+node-ansi-styles (6.2.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Build commonjs using mjs2cjs -a (fixes node-wrap-ansi)
+
+ -- Yadd <yadd@debian.org>  Sat, 26 Nov 2022 22:00:16 +0100
+
+node-ansi-styles (6.2.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 6.2.1
+  * Refresh patches
+
+ -- Yadd <yadd@debian.org>  Sat, 26 Nov 2022 15:40:20 +0100
+
+node-ansi-styles (6.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 6.1.1
+  * Unfuzz patches
+
+ -- Yadd <yadd@debian.org>  Tue, 13 Sep 2022 08:21:38 +0200
+
+node-ansi-styles (6.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Tue, 26 Jul 2022 10:49:49 +0200
+
+node-ansi-styles (6.1.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove obsolete field Name from debian/upstream/metadata (already present
+    in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Yadd ]
+  * Refresh patch
+  * Drop @types/ansi-styles
+  * New upstream version 6.1.0
+  * Refresh patch
+  * Build commonjs files with mjs2cjs
+  * Update test
+
+ -- Yadd <yadd@debian.org>  Sat, 09 Apr 2022 09:02:37 +0200
+
+node-ansi-styles (4.3.0+~4.2.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ lintian-brush ]
+  * Bump debhelper from old 12 to 13. + Drop check for DEB_BUILD_OPTIONS
+    containing "nocheck", since debhelper now does this
+  * Remove obsolete field Name from debian/upstream/metadata (already present
+    in machine-readable debian/copyright)
+  * Update standards version to 4.6.0, no changes needed
+
+  [ Yadd ]
+  * Modernize debian/watch
+  * Fix filenamemangle
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Drop dependency to nodejs
+  * Embed typescript definitions
+  * New upstream version 4.3.0+~4.2.0
+
+ -- Yadd <yadd@debian.org>  Sun, 21 Nov 2021 13:22:40 +0100
+
 node-ansi-styles (4.2.1-1) unstable; urgency=medium
 
   * Team upload
